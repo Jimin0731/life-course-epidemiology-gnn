@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">SPAN architecture</title>
+<desc id="desc">Schematic of the uploaded WeightedGAT_LSTM implementation; not a measured result</desc>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:11px;font-weight:600}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1;stroke-width:1}.grid{stroke:#e5ebf2;stroke-width:1}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<text x="50" y="52" class="title">SPAN architecture</text>
+<text x="50" y="78" class="sub">Schematic of the uploaded WeightedGAT_LSTM implementation; not a measured result</text>
+<defs><marker id="arch-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#49647e"/></marker></defs>
+<rect x="55" y="150" width="160" height="120" rx="15" fill="#eef3f8" class="box"/>
+<text x="85" y="190" font-size="17" font-weight="700">Longitudinal nodes</text>
+<text x="83" y="220" class="small">9 variables × 40 times</text>
+<text x="83" y="245" class="small">DAG edge weights</text>
+<path d="M220 210 L285 210" class="arrow" marker-end="url(#arch-arrow)"/>
+<rect x="300" y="135" width="180" height="150" rx="15" fill="#e8f1ff" class="box"/>
+<text x="350" y="180" font-size="18" font-weight="700">LSTM encoder</text>
+<text x="330" y="215" class="small">Per-node temporal history</text>
+<text x="333" y="240" class="small">Bidirectional representation</text>
+<path d="M485 210 L550 210" class="arrow" marker-end="url(#arch-arrow)"/>
+<rect x="565" y="115" width="205" height="190" rx="15" fill="#e6f7f3" class="box"/>
+<text x="615" y="158" font-size="18" font-weight="700">Weighted GATv2</text>
+<text x="602" y="195" class="small">Edge attributes enter attention</text>
+<text x="606" y="225" class="small">Multi-head message passing</text>
+<text x="607" y="255" class="small">Attention weights retained</text>
+<path d="M775 210 L840 210" class="arrow" marker-end="url(#arch-arrow)"/>
+<rect x="855" y="135" width="150" height="150" rx="15" fill="#fff0ea" class="box"/>
+<text x="885" y="178" font-size="18" font-weight="700">Prediction head</text>
+<text x="888" y="213" class="small">Graph pooling</text>
+<text x="888" y="240" class="small">Binary outcome</text>
+<path d="M670 310 C670 370 870 355 870 400" class="arrow" marker-end="url(#arch-arrow)"/>
+<rect x="790" y="400" width="300" height="80" rx="15" fill="#f7f0ff" class="box"/>
+<text x="830" y="435" font-size="17" font-weight="700">Attention-derived importance</text>
+<text x="830" y="460" class="small">Descriptive interpretation, not causality</text>
+<text x="55" y="525" class="small">SCHEMATIC — based on temporal_encoders.py, models_weightedgat_temporal.py, and analyze_node_importance.py.</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-labelledby="title desc">
+<title id="title">Performance by life-course rule family</title>
+<desc id="desc">Mean AUROC across N=500, 1,000, and 2,000, grouped by rule-name prefix</desc>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:11px;font-weight:600}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1;stroke-width:1}.grid{stroke:#e5ebf2;stroke-width:1}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<text x="50" y="52" class="title">Performance by life-course rule family</text>
+<text x="50" y="78" class="sub">Mean AUROC across N=500, 1,000, and 2,000, grouped by rule-name prefix</text>
+<line x1="105" y1="520.0" x2="1030" y2="520.0" class="grid"/>
+<text x="65" y="525.0" class="small">0.5</text>
+<line x1="105" y1="442.0" x2="1030" y2="442.0" class="grid"/>
+<text x="65" y="447.0" class="small">0.6</text>
+<line x1="105" y1="364.0" x2="1030" y2="364.0" class="grid"/>
+<text x="65" y="369.0" class="small">0.7</text>
+<line x1="105" y1="286.0" x2="1030" y2="286.0" class="grid"/>
+<text x="65" y="291.0" class="small">0.8</text>
+<line x1="105" y1="208.0" x2="1030" y2="208.0" class="grid"/>
+<text x="65" y="213.0" class="small">0.9</text>
+<line x1="105" y1="130.0" x2="1030" y2="130.0" class="grid"/>
+<text x="65" y="135.0" class="small">1.0</text>
+<text x="182" y="552" class="label">Order</text>
+<rect x="142" y="352.4" width="36" height="167.6" rx="4" fill="#1967d2"/>
+<text x="143" y="345.4" class="value">0.715</text>
+<rect x="192" y="366.7" width="36" height="153.3" rx="4" fill="#00897b"/>
+<text x="193" y="359.7" class="value">0.697</text>
+<rect x="242" y="415.3" width="36" height="104.7" rx="4" fill="#e76f51"/>
+<text x="243" y="408.3" class="value">0.634</text>
+<text x="412" y="552" class="label">Period</text>
+<rect x="372" y="265.0" width="36" height="255.0" rx="4" fill="#1967d2"/>
+<text x="373" y="258.0" class="value">0.827</text>
+<rect x="422" y="255.5" width="36" height="264.5" rx="4" fill="#00897b"/>
+<text x="423" y="248.5" class="value">0.839</text>
+<rect x="472" y="361.5" width="36" height="158.5" rx="4" fill="#e76f51"/>
+<text x="473" y="354.5" class="value">0.703</text>
+<text x="642" y="552" class="label">Repeats</text>
+<rect x="602" y="203.4" width="36" height="316.6" rx="4" fill="#1967d2"/>
+<text x="603" y="196.4" class="value">0.906</text>
+<rect x="652" y="319.2" width="36" height="200.8" rx="4" fill="#00897b"/>
+<text x="653" y="312.2" class="value">0.757</text>
+<rect x="702" y="401.3" width="36" height="118.7" rx="4" fill="#e76f51"/>
+<text x="703" y="394.3" class="value">0.652</text>
+<text x="872" y="552" class="label">Timing</text>
+<rect x="832" y="361.1" width="36" height="158.9" rx="4" fill="#1967d2"/>
+<text x="833" y="354.1" class="value">0.704</text>
+<rect x="882" y="378.9" width="36" height="141.1" rx="4" fill="#00897b"/>
+<text x="883" y="371.9" class="value">0.681</text>
+<rect x="932" y="368.7" width="36" height="151.3" rx="4" fill="#e76f51"/>
+<text x="933" y="361.7" class="value">0.694</text>
+<line x1="105" y1="130" x2="105" y2="520" class="axis"/>
+<line x1="105" y1="520" x2="1030" y2="520" class="axis"/>
+<text x="20" y="350" class="label" transform="rotate(-90 20 350)">Mean AUROC</text>
+<rect x="240" y="585" width="16" height="16" rx="3" fill="#1967d2"/>
+<text x="264" y="598" class="small">PC-GNN (EconomicGNN_CNN)</text>
+<rect x="520" y="585" width="16" height="16" rx="3" fill="#00897b"/>
+<text x="544" y="598" class="small">SPAN (WeightedGAT_LSTM)</text>
+<rect x="800" y="585" width="16" height="16" rx="3" fill="#e76f51"/>
+<text x="824" y="598" class="small">ILGNet (SpatioTemporalGNN)</text>
+<text x="105" y="630" class="small">Families contain 3 Order, 4 Period, 3 Repeats, and 4 Timing rules at each sample size.</text>
+</svg>

@@ -1,0 +1,10 @@
+name: lce-gnn
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - r-base=4.3
+  - pip
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,28 @@
+name: portfolio-integrity
+
+on:
+  push:
+    branches:
+      - main
+      - codex/rebuild-lce-research-portfolio
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile Python sources
+        run: python -m compileall -q phase-1-baseline-study phase-2-gnn-extension scripts tests
+      - name: Verify generated summaries and SVGs
+        run: python scripts/build_portfolio_assets.py --check
+      - name: Run deterministic smoke test
+        run: python scripts/smoke_test.py
