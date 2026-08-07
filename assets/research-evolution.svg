@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Research evolution</title>
+<desc id="desc">From a collaborative baseline benchmark to Jimin Byun's individual GNN extension</desc>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:11px;font-weight:600}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1;stroke-width:1}.grid{stroke:#e5ebf2;stroke-width:1}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<text x="50" y="52" class="title">Research evolution</text>
+<text x="50" y="78" class="sub">From a collaborative baseline benchmark to Jimin Byun's individual GNN extension</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#49647e"/></marker></defs>
+<rect x="55" y="115" width="470" height="235" rx="18" fill="#e8f1ff" class="box"/>
+<text x="85" y="155" font-size="15" font-weight="700" fill="#1967d2">PHASE 1 · COLLABORATIVE</text>
+<text x="85" y="190" font-size="23" font-weight="700">Baseline benchmark</text>
+<text x="85" y="225" class="label">Logistic Regression · XGBoost · ResNet</text>
+<text x="85" y="255" class="label">Sample-size and life-course rule comparison</text>
+<text x="85" y="300" class="small">Alec Kemp · Jimin Byun · Yuxin Du</text>
+<text x="85" y="324" class="small">Jimin led implementation, execution, results, and analysis.</text>
+<path d="M540 232 L650 232" class="arrow" marker-end="url(#arrow)"/>
+<text x="557" y="214" class="small">research</text><text x="557" y="254" class="small">extension</text>
+<rect x="670" y="115" width="475" height="235" rx="18" fill="#e6f7f3" class="box"/>
+<text x="700" y="155" font-size="15" font-weight="700" fill="#00897b">PHASE 2 · INDIVIDUAL</text>
+<text x="700" y="190" font-size="23" font-weight="700">Graph neural networks</text>
+<text x="700" y="225" class="label">PC-GNN · SPAN · ILGNet</text>
+<text x="700" y="255" class="label">DAG structure · temporal encoding · attention</text>
+<text x="700" y="300" class="small">Jimin Byun's individual extension</text>
+<text x="700" y="324" class="small">Raw implementation names retained for result provenance.</text>
+<text x="55" y="397" class="small">Schematic overview — model performance is shown only in the separate evidence-backed figures.</text>
+</svg>

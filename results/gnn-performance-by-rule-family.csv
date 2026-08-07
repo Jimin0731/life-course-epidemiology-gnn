@@ -1,0 +1,13 @@
+rule_family,portfolio_model,source_model,observations,mean_auroc,mean_f1_score,mean_brier_score,sample_sizes,source_file
+Order,PC-GNN,EconomicGNN_CNN,9,0.714930,0.259943,0.375612,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Order,SPAN,WeightedGAT_LSTM,9,0.696587,0.255818,0.368531,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Order,ILGNet,SpatioTemporalGNN,9,0.634243,0.213793,0.422578,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Period,PC-GNN,EconomicGNN_CNN,12,0.826917,0.340995,0.244330,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Period,SPAN,WeightedGAT_LSTM,12,0.839080,0.493408,0.165085,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Period,ILGNet,SpatioTemporalGNN,12,0.703157,0.182917,0.447355,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Repeats,PC-GNN,EconomicGNN_CNN,9,0.905942,0.667472,0.159139,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Repeats,SPAN,WeightedGAT_LSTM,9,0.757382,0.429455,0.315499,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Repeats,ILGNet,SpatioTemporalGNN,9,0.652203,0.360406,0.370360,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Timing,PC-GNN,EconomicGNN_CNN,12,0.703781,0.249565,0.364662,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Timing,SPAN,WeightedGAT_LSTM,12,0.680867,0.245007,0.350740,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+Timing,ILGNet,SpatioTemporalGNN,12,0.693956,0.203462,0.439896,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv

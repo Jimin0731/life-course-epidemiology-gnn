@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+<title id="title">Model performance across sample sizes</title>
+<desc id="desc">Mean AUROC across all 14 life-course rules; one reported value per rule and model</desc>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:11px;font-weight:600}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1;stroke-width:1}.grid{stroke:#e5ebf2;stroke-width:1}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<text x="50" y="52" class="title">Model performance across sample sizes</text>
+<text x="50" y="78" class="sub">Mean AUROC across all 14 life-course rules; one reported value per rule and model</text>
+<line x1="110" y1="500.0" x2="930" y2="500.0" class="grid"/>
+<text x="70" y="505.0" class="small">0.5</text>
+<line x1="110" y1="416.7" x2="930" y2="416.7" class="grid"/>
+<text x="70" y="421.7" class="small">0.6</text>
+<line x1="110" y1="333.3" x2="930" y2="333.3" class="grid"/>
+<text x="70" y="338.3" class="small">0.7</text>
+<line x1="110" y1="250.0" x2="930" y2="250.0" class="grid"/>
+<text x="70" y="255.0" class="small">0.8</text>
+<line x1="110" y1="166.7" x2="930" y2="166.7" class="grid"/>
+<text x="70" y="171.7" class="small">0.9</text>
+<line x1="110" y1="125" x2="110" y2="500" class="axis"/>
+<line x1="110" y1="500" x2="930" y2="500" class="axis"/>
+<text x="20" y="320" class="label" transform="rotate(-90 20 320)">Mean AUROC</text>
+<text x="450" y="555" class="label">Sample size (N)</text>
+<text x="172" y="525" class="label">500</text>
+<text x="492" y="525" class="label">1,000</text>
+<text x="812" y="525" class="label">2,000</text>
+<polyline points="190,271.9 510,315.4 830,201.0" fill="none" stroke="#1967d2" stroke-width="3"/>
+<circle cx="190" cy="271.9" r="6" fill="#1967d2"/>
+<text x="199" y="262.9" class="value">0.774</text>
+<circle cx="510" cy="315.4" r="6" fill="#1967d2"/>
+<text x="519" y="306.4" class="value">0.721</text>
+<circle cx="830" cy="201.0" r="6" fill="#1967d2"/>
+<text x="839" y="192.0" class="value">0.859</text>
+<polyline points="190,336.2 510,292.3 830,256.9" fill="none" stroke="#00897b" stroke-width="3"/>
+<circle cx="190" cy="336.2" r="6" fill="#00897b"/>
+<text x="199" y="327.2" class="value">0.697</text>
+<circle cx="510" cy="292.3" r="6" fill="#00897b"/>
+<text x="519" y="283.3" class="value">0.749</text>
+<circle cx="830" cy="256.9" r="6" fill="#00897b"/>
+<text x="839" y="247.9" class="value">0.792</text>
+<polyline points="190,357.8 510,359.2 830,345.9" fill="none" stroke="#e76f51" stroke-width="3"/>
+<circle cx="190" cy="357.8" r="6" fill="#e76f51"/>
+<text x="199" y="348.8" class="value">0.671</text>
+<circle cx="510" cy="359.2" r="6" fill="#e76f51"/>
+<text x="519" y="350.2" class="value">0.669</text>
+<circle cx="830" cy="345.9" r="6" fill="#e76f51"/>
+<text x="839" y="336.9" class="value">0.685</text>
+<line x1="610" y1="105" x2="640" y2="105" stroke="#1967d2" stroke-width="4"/>
+<text x="650" y="110" class="small">PC-GNN (EconomicGNN_CNN)</text>
+<line x1="610" y1="129" x2="640" y2="129" stroke="#00897b" stroke-width="4"/>
+<text x="650" y="134" class="small">SPAN (WeightedGAT_LSTM)</text>
+<line x1="610" y1="153" x2="640" y2="153" stroke="#e76f51" stroke-width="4"/>
+<text x="650" y="158" class="small">ILGNet (SpatioTemporalGNN)</text>
+<text x="110" y="590" class="small">Source: complete V4 N=500/1,000/2,000 table (126 rows). Descriptive means; no uncertainty estimates available.</text>
+</svg>
