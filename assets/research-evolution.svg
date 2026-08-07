@@ -1,26 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="420" viewBox="0 0 1240 420" role="img" aria-labelledby="title desc">
 <title id="title">Research evolution</title>
-<desc id="desc">From a collaborative baseline benchmark to Jimin Byun's individual GNN extension</desc>
-<style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:11px;font-weight:600}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1;stroke-width:1}.grid{stroke:#e5ebf2;stroke-width:1}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
+<desc id="desc">Baseline evidence motivated a DAG-aware individual extension</desc>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:12px;font-weight:700}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1}.grid{stroke:#e5ebf2}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
 <rect width="100%" height="100%" fill="#fbfcfe"/>
-<text x="50" y="52" class="title">Research evolution</text>
-<text x="50" y="78" class="sub">From a collaborative baseline benchmark to Jimin Byun's individual GNN extension</text>
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#49647e"/></marker></defs>
-<rect x="55" y="115" width="470" height="235" rx="18" fill="#e8f1ff" class="box"/>
-<text x="85" y="155" font-size="15" font-weight="700" fill="#1967d2">PHASE 1 · COLLABORATIVE</text>
-<text x="85" y="190" font-size="23" font-weight="700">Baseline benchmark</text>
-<text x="85" y="225" class="label">Logistic Regression · XGBoost · ResNet</text>
-<text x="85" y="255" class="label">Sample-size and life-course rule comparison</text>
-<text x="85" y="300" class="small">Alec Kemp · Jimin Byun · Yuxin Du</text>
-<text x="85" y="324" class="small">Jimin led implementation, execution, results, and analysis.</text>
-<path d="M540 232 L650 232" class="arrow" marker-end="url(#arrow)"/>
-<text x="557" y="214" class="small">research</text><text x="557" y="254" class="small">extension</text>
-<rect x="670" y="115" width="475" height="235" rx="18" fill="#e6f7f3" class="box"/>
-<text x="700" y="155" font-size="15" font-weight="700" fill="#00897b">PHASE 2 · INDIVIDUAL</text>
-<text x="700" y="190" font-size="23" font-weight="700">Graph neural networks</text>
-<text x="700" y="225" class="label">PC-GNN · SPAN · ILGNet</text>
-<text x="700" y="255" class="label">DAG structure · temporal encoding · attention</text>
-<text x="700" y="300" class="small">Jimin Byun's individual extension</text>
-<text x="700" y="324" class="small">Raw implementation names retained for result provenance.</text>
-<text x="55" y="397" class="small">Schematic overview — model performance is shown only in the separate evidence-backed figures.</text>
+<text x="50" y="50" class="title">Research evolution</text>
+<text x="50" y="76" class="sub">Baseline evidence motivated a DAG-aware individual extension</text>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#49647e"/></marker></defs>
+<rect x="45" y="125" width="330" height="205" rx="18" fill="#e8f1ff" class="box"/>
+<text x="70" y="160" font-size="14" font-weight="700" fill="#1967d2">PHASE 1 · COLLABORATIVE</text>
+<text x="70" y="198" font-size="21" font-weight="700">Baseline comparison</text>
+<text x="70" y="232" class="label">LR · XGBoost · ResNet</text>
+<text x="70" y="263" class="small">Cohort size and rule structure</text>
+<text x="70" y="286" class="small">changed relative performance.</text>
+<path d="M385 228 L430 228" class="arrow" marker-end="url(#a)"/>
+<rect x="445" y="125" width="350" height="205" rx="18" fill="#fff6e4" class="box"/>
+<text x="470" y="160" font-size="14" font-weight="700" fill="#9a6700">RESEARCH MOTIVATION</text>
+<text x="470" y="198" font-size="21" font-weight="700">Limitations identified</text>
+<text x="470" y="232" class="label">Small-N instability</text>
+<text x="470" y="260" class="label">DAG structure not explicit</text>
+<text x="470" y="288" class="small">Deep learning was not uniformly superior.</text>
+<path d="M805 228 L850 228" class="arrow" marker-end="url(#a)"/>
+<rect x="865" y="125" width="330" height="205" rx="18" fill="#e6f7f3" class="box"/>
+<text x="890" y="160" font-size="14" font-weight="700" fill="#00897b">PHASE 2 · INDIVIDUAL</text>
+<text x="890" y="198" font-size="21" font-weight="700">DAG-aware GNNs</text>
+<text x="890" y="232" class="label">PC-GNN · SPAN · ILGNet</text>
+<text x="890" y="263" class="small">Structural alignment, scaling,</text>
+<text x="890" y="286" class="small">and descriptive attention.</text>
+<text x="45" y="385" class="small">SCHEMATIC — Phase 1: Alec Kemp, Jimin Byun, Yuxin Du. Phase 2: Jimin Byun.</text>
 </svg>

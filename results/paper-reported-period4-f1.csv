@@ -1,0 +1,7 @@
+model,sample_size,f1,resnet_reference_f1,paper_reported_difference_vs_resnet,arithmetic_difference_from_displayed_values,internal_consistency,evidence_type
+PC-GNN,10000,0.743,0.760,-0.017,-0.017,consistent,paper-reported-result
+PC-GNN,20000,0.870,0.760,+0.016,+0.110,paper-values-conflict-retained-verbatim,paper-reported-result
+SPAN,10000,0.905,0.760,+0.145,+0.145,consistent,paper-reported-result
+SPAN,20000,0.851,0.760,+0.091,+0.091,consistent,paper-reported-result
+ILGNet,10000,0.909,0.760,+0.149,+0.149,consistent,paper-reported-result
+ILGNet,20000,0.901,0.760,+0.141,+0.141,consistent,paper-reported-result

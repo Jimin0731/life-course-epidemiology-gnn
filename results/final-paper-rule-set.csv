@@ -1,0 +1,13 @@
+rule,rule_family,included_in_final_paper,evidence_type
+Order1,Order,true,paper-definition
+Order2,Order,true,paper-definition
+Order3,Order,true,paper-definition
+Repeats1,Repeats,true,paper-definition
+Repeats2,Repeats,true,paper-definition
+Repeats3,Repeats,true,paper-definition
+Timing1,Timing,true,paper-definition
+Timing2,Timing,true,paper-definition
+Timing3,Timing,true,paper-definition
+Period1,Period,true,paper-definition
+Period2,Period,true,paper-definition
+Period4,Period,true,paper-definition

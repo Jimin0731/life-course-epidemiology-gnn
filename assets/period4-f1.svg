@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="640" viewBox="0 0 1060 640" role="img" aria-labelledby="title desc">
+<title id="title">Period4 F1 against the ResNet reference</title>
+<desc id="desc">Paper-reported result; differences are retained exactly as reported</desc>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:12px;font-weight:700}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1}.grid{stroke:#e5ebf2}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<text x="50" y="50" class="title">Period4 F1 against the ResNet reference</text>
+<text x="50" y="76" class="sub">Paper-reported result; differences are retained exactly as reported</text>
+<line x1="105" y1="500.0" x2="1000" y2="500.0" class="grid"/>
+<text x="65" y="505.0" class="small">0.70</text>
+<line x1="105" y1="426.0" x2="1000" y2="426.0" class="grid"/>
+<text x="65" y="431.0" class="small">0.75</text>
+<line x1="105" y1="352.0" x2="1000" y2="352.0" class="grid"/>
+<text x="65" y="357.0" class="small">0.80</text>
+<line x1="105" y1="278.0" x2="1000" y2="278.0" class="grid"/>
+<text x="65" y="283.0" class="small">0.85</text>
+<line x1="105" y1="204.0" x2="1000" y2="204.0" class="grid"/>
+<text x="65" y="209.0" class="small">0.90</text>
+<line x1="105" y1="130.0" x2="1000" y2="130.0" class="grid"/>
+<text x="65" y="135.0" class="small">0.95</text>
+<line x1="105" y1="411.2" x2="1000" y2="411.2" stroke="#6d597a" stroke-width="3" stroke-dasharray="8 5"/>
+<text x="112" y="403.2" class="small">ResNet reference 0.760</text>
+<text x="290" y="565" class="label">N=10,000</text>
+<rect x="209" y="436.4" width="52" height="63.6" rx="4" fill="#1967d2"/>
+<text x="213" y="427.4" class="value">0.743</text>
+<text x="211" y="518" class="small">PC-GNN</text>
+<text x="212" y="537" class="small">-0.017</text>
+<rect x="299" y="196.6" width="52" height="303.4" rx="4" fill="#00897b"/>
+<text x="303" y="187.6" class="value">0.905</text>
+<text x="301" y="518" class="small">SPAN</text>
+<text x="302" y="537" class="small">+0.145</text>
+<rect x="389" y="190.7" width="52" height="309.3" rx="4" fill="#e76f51"/>
+<text x="393" y="181.7" class="value">0.909</text>
+<text x="391" y="518" class="small">ILGNet</text>
+<text x="392" y="537" class="small">+0.149</text>
+<text x="710" y="565" class="label">N=20,000</text>
+<rect x="629" y="248.4" width="52" height="251.6" rx="4" fill="#1967d2"/>
+<text x="633" y="239.4" class="value">0.870</text>
+<text x="631" y="518" class="small">PC-GNN</text>
+<text x="632" y="537" class="small">+0.016</text>
+<rect x="719" y="276.5" width="52" height="223.5" rx="4" fill="#00897b"/>
+<text x="723" y="267.5" class="value">0.851</text>
+<text x="721" y="518" class="small">SPAN</text>
+<text x="722" y="537" class="small">+0.091</text>
+<rect x="809" y="202.5" width="52" height="297.5" rx="4" fill="#e76f51"/>
+<text x="813" y="193.5" class="value">0.901</text>
+<text x="811" y="518" class="small">ILGNet</text>
+<text x="812" y="537" class="small">+0.141</text>
+<text x="105" y="595" class="small">SPAN and ILGNet exceed ResNet at both sizes; PC-GNN does so only at N=20,000.</text>
+<text x="105" y="617" class="small">Caveat: PC-GNN N=20k reported +0.016 differs from arithmetic +0.110; both are retained in provenance.</text>
+</svg>

@@ -77,8 +77,6 @@ def resolve_data_dir():
         f"Tried: {candidates}"
     )
 
-DAG_DIR = resolve_data_dir()
-
 def resolve_dataset_dir(n_size):
     folder_name = f"data_{n_size}"
     candidates = [
@@ -167,6 +165,9 @@ def run_experiment(model_class, temporal_encoder, n_size, rule_name, x_path, y_p
         ))
     
     labels = np.array([d.y.item() for d in data_list])
+    # Overall prevalence is required by the oversampling decision below.
+    # The post-oversampling training prevalence is calculated separately.
+    pos_rate = float(labels.mean())
     pos_indices = np.where(labels == 1)[0]
     neg_indices = np.where(labels == 0)[0]
 
@@ -237,13 +238,13 @@ def run_experiment(model_class, temporal_encoder, n_size, rule_name, x_path, y_p
     
     # Loss function with stronger pos_weight for large N
     y_train = [d.y.item() for d in train_data]
-    pos_rate = sum(y_train) / (len(y_train) + 1e-9)
+    train_pos_rate = sum(y_train) / (len(y_train) + 1e-9)
     
-    if pos_rate == 0: 
+    if train_pos_rate == 0:
         pos_weight = torch.tensor([1.0]).to(device)
     else:
         # pos_weight: 불균형 비율 반영
-        raw_weight = (1 - pos_rate) / pos_rate
+        raw_weight = (1 - train_pos_rate) / train_pos_rate
         if n_size >= 5000:
             weight_multiplier = 2.0
         else:
@@ -253,9 +254,9 @@ def run_experiment(model_class, temporal_encoder, n_size, rule_name, x_path, y_p
     # ✅ NEW: Focal Loss 사용 (불균형 데이터에 훨씬 효과적)
     # pos_rate < 5%: gamma=3.0 (더 강하게 어려운 샘플에 집중)
     # pos_rate >= 5%: gamma=2.0 (기본값)
-    if pos_rate < 0.05:
+    if train_pos_rate < 0.05:
         criterion = FocalLoss(alpha=0.75, gamma=3.0, pos_weight=pos_weight)
-    elif pos_rate < 0.15:
+    elif train_pos_rate < 0.15:
         criterion = FocalLoss(alpha=0.50, gamma=2.0, pos_weight=pos_weight)
     else:
         criterion = FocalLoss(alpha=0.25, gamma=2.0, pos_weight=pos_weight)
@@ -365,6 +366,7 @@ if __name__ == "__main__":
     results = []
 
     # Load DAG
+    DAG_DIR = resolve_data_dir()
     print(f"Loading DAG...")
     dag_edges = pd.read_csv(os.path.join(DAG_DIR, "dag_edges.csv"))
     dag_nodes = [line.strip() for line in open(os.path.join(DAG_DIR, "dag_node_names.txt"))]

@@ -1,8 +1,8 @@
 file,kind,rows,sample_size_count,rule_count,model_count,node_count,status
 final_model_comparison_metrics_IMPROVED.csv,model_performance,130,2,14,5,0,retained-revision
 final_model_comparison_metrics_improved_f1.csv,model_performance,350,5,14,5,0,retained-revision
-final_model_comparison_metrics_V4.csv,model_performance,78,2,14,3,0,retained-revision
-final_model_comparison_metrics_V4_N500_1000_2000.csv,model_performance,126,3,14,3,0,canonical
+final_model_comparison_metrics_V4.csv,model_performance,78,2,14,3,0,preserved-raw-14-rule-source
+final_model_comparison_metrics_V4_N500_1000_2000.csv,model_performance,126,3,14,3,0,preserved-raw-14-rule-source
 node_importance_summary.csv,node_importance,63,0,7,1,9,retained-revision
 node_importance_summary_N1000.csv,node_importance,18,0,2,1,9,retained-revision
 node_importance_summary_N2000.csv,node_importance,63,1,7,1,9,retained-revision
