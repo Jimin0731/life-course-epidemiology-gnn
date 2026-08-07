@@ -1,0 +1,5 @@
+model,overall_mean_f1,evidence_type
+ResNet,0.954,paper-reported-result
+PC-GNN,0.809,paper-reported-result
+SPAN,0.679,paper-reported-result
+ILGNet,0.649,paper-reported-result

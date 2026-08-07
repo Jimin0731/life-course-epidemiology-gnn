@@ -1,13 +1,13 @@
-rule_family,portfolio_model,source_model,observations,mean_auroc,mean_f1_score,mean_brier_score,sample_sizes,source_file
-Order,PC-GNN,EconomicGNN_CNN,9,0.714930,0.259943,0.375612,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Order,SPAN,WeightedGAT_LSTM,9,0.696587,0.255818,0.368531,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Order,ILGNet,SpatioTemporalGNN,9,0.634243,0.213793,0.422578,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Period,PC-GNN,EconomicGNN_CNN,12,0.826917,0.340995,0.244330,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Period,SPAN,WeightedGAT_LSTM,12,0.839080,0.493408,0.165085,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Period,ILGNet,SpatioTemporalGNN,12,0.703157,0.182917,0.447355,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Repeats,PC-GNN,EconomicGNN_CNN,9,0.905942,0.667472,0.159139,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Repeats,SPAN,WeightedGAT_LSTM,9,0.757382,0.429455,0.315499,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Repeats,ILGNet,SpatioTemporalGNN,9,0.652203,0.360406,0.370360,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Timing,PC-GNN,EconomicGNN_CNN,12,0.703781,0.249565,0.364662,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Timing,SPAN,WeightedGAT_LSTM,12,0.680867,0.245007,0.350740,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
-Timing,ILGNet,SpatioTemporalGNN,12,0.693956,0.203462,0.439896,500|1000|2000,final_model_comparison_metrics_V4_N500_1000_2000.csv
+rule_family,display_label,source_model,display_mapping_status,observations,mean_auroc,mean_f1_score,mean_brier_score,sample_sizes,rule_scope,source_file
+Period,PC-GNN,EconomicGNN_CNN,plot-script mapping; architecture broadly consistent,6,0.990567,0.860147,0.013166,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Period,SPAN,WeightedGAT_LSTM,plot-script mapping; architecture strongly supported,6,0.999436,0.936948,0.012423,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Period,ILGNet,SpatioTemporalGNN,plot-script mapping only; architectural identity unresolved,6,0.999511,0.935792,0.014524,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Repeats,PC-GNN,EconomicGNN_CNN,plot-script mapping; architecture broadly consistent,6,1.000000,0.989242,0.002887,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Repeats,SPAN,WeightedGAT_LSTM,plot-script mapping; architecture strongly supported,6,0.834761,0.816410,0.087267,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Repeats,ILGNet,SpatioTemporalGNN,plot-script mapping only; architectural identity unresolved,6,0.788719,0.676392,0.180455,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Timing,PC-GNN,EconomicGNN_CNN,plot-script mapping; architecture broadly consistent,6,0.950328,0.598253,0.087488,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Timing,SPAN,WeightedGAT_LSTM,plot-script mapping; architecture strongly supported,6,0.867090,0.423746,0.219547,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Timing,ILGNet,SpatioTemporalGNN,plot-script mapping only; architectural identity unresolved,6,0.950455,0.646656,0.108110,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Order,PC-GNN,EconomicGNN_CNN,plot-script mapping; architecture broadly consistent,6,0.986139,0.789924,0.039779,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Order,SPAN,WeightedGAT_LSTM,plot-script mapping; architecture strongly supported,6,0.834622,0.538658,0.107769,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv
+Order,ILGNet,SpatioTemporalGNN,plot-script mapping only; architectural identity unresolved,6,0.714179,0.338501,0.327119,10000|20000,final-paper-12,final_model_comparison_metrics_V4.csv

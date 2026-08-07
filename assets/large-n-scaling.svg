@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="590" viewBox="0 0 1000 590" role="img" aria-labelledby="title desc">
-<title id="title">Exploratory compact-sample performance</title>
-<desc id="desc">Mean AUROC endpoints from the uploaded compact revision, final 12-rule filter</desc>
+<title id="title">GNN scaling from N=10,000 to N=20,000</title>
+<desc id="desc">Paper-reported mean F1 across the final 12 tasks</desc>
 <style>text{font-family:Inter,Arial,sans-serif;fill:#183153}.title{font-size:28px;font-weight:700}.sub{font-size:14px;fill:#526579}.label{font-size:14px}.small{font-size:12px;fill:#526579}.value{font-size:12px;font-weight:700}.box{stroke:#c9d5e3;stroke-width:1.5}.axis{stroke:#9eafc1}.grid{stroke:#e5ebf2}.arrow{stroke:#49647e;stroke-width:2;fill:none}</style>
 <rect width="100%" height="100%" fill="#fbfcfe"/>
-<text x="50" y="50" class="title">Exploratory compact-sample performance</text>
-<text x="50" y="76" class="sub">Mean AUROC endpoints from the uploaded compact revision, final 12-rule filter</text>
+<text x="50" y="50" class="title">GNN scaling from N=10,000 to N=20,000</text>
+<text x="50" y="76" class="sub">Paper-reported mean F1 across the final 12 tasks</text>
 <line x1="110" y1="422.5" x2="900" y2="422.5" class="grid"/>
 <text x="70" y="427.5" class="small">0.6</text>
 <line x1="110" y1="337.5" x2="900" y2="337.5" class="grid"/>
@@ -18,26 +18,26 @@
 <text x="280" y="505" class="label">N=10,000</text>
 <text x="700" y="505" class="label">N=20,000</text>
 <text x="24" y="320" class="label" transform="rotate(-90 24 320)">F1 score</text>
-<line x1="315" y1="258.8" x2="735" y2="190.6" stroke="#1967d2" stroke-width="4"/>
-<circle cx="315" cy="258.8" r="7" fill="#1967d2"/>
-<circle cx="735" cy="190.6" r="7" fill="#1967d2"/>
-<text x="280" y="246.8" class="value">0.793</text>
-<text x="745" y="195.6" class="value">0.873</text>
+<line x1="315" y1="266.1" x2="735" y2="222.8" stroke="#1967d2" stroke-width="4"/>
+<circle cx="315" cy="266.1" r="7" fill="#1967d2"/>
+<circle cx="735" cy="222.8" r="7" fill="#1967d2"/>
+<text x="280" y="254.1" class="value">0.784</text>
+<text x="745" y="227.8" class="value">0.835</text>
 <rect x="610" y="92" width="14" height="14" fill="#1967d2"/>
 <text x="632" y="104" class="small">PC-GNN</text>
-<line x1="315" y1="332.6" x2="735" y2="239.8" stroke="#00897b" stroke-width="4"/>
-<circle cx="315" cy="332.6" r="7" fill="#00897b"/>
-<circle cx="735" cy="239.8" r="7" fill="#00897b"/>
-<text x="280" y="320.6" class="value">0.706</text>
-<text x="745" y="244.8" class="value">0.815</text>
+<line x1="315" y1="349.4" x2="735" y2="361.3" stroke="#00897b" stroke-width="4"/>
+<circle cx="315" cy="349.4" r="7" fill="#00897b"/>
+<circle cx="735" cy="361.3" r="7" fill="#00897b"/>
+<text x="280" y="337.4" class="value">0.686</text>
+<text x="745" y="366.3" class="value">0.672</text>
 <rect x="780" y="92" width="14" height="14" fill="#00897b"/>
 <text x="802" y="104" class="small">SPAN</text>
-<line x1="315" y1="372.1" x2="735" y2="338.6" stroke="#e76f51" stroke-width="4"/>
-<circle cx="315" cy="372.1" r="7" fill="#e76f51"/>
-<circle cx="735" cy="338.6" r="7" fill="#e76f51"/>
-<text x="280" y="360.1" class="value">0.659</text>
-<text x="745" y="343.6" class="value">0.699</text>
+<line x1="315" y1="409.8" x2="735" y2="351.1" stroke="#e76f51" stroke-width="4"/>
+<circle cx="315" cy="409.8" r="7" fill="#e76f51"/>
+<circle cx="735" cy="351.1" r="7" fill="#e76f51"/>
+<text x="280" y="397.8" class="value">0.615</text>
+<text x="745" y="356.1" class="value">0.684</text>
 <rect x="610" y="116" width="14" height="14" fill="#e76f51"/>
 <text x="632" y="128" class="small">ILGNet</text>
-<text x="110" y="555" class="small">DERIVED FROM UPLOADED RAW CSV — N=1,000 remains in the machine-readable summary; model names are plot-script display labels.</text>
+<text x="110" y="555" class="small">PAPER-REPORTED RESULT — ILGNet has the largest reported F1 change (+0.069); no uncertainty estimates were available.</text>
 </svg>

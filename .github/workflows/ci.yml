@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - codex/rebuild-lce-research-portfolio
+      - codex/paper-alignment-correction
   pull_request:
 
 permissions:
